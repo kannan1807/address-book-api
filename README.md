@@ -16,7 +16,7 @@ and search addresses by GPS proximity.
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/address-book-api.git
+git clone https://github.com/kannan1807/address-book-api.git
 cd address-book-api
 ```
 
