@@ -5,8 +5,10 @@ from sqlalchemy.orm import Session
 from .. import crud, schemas
 from ..database import get_db
 
+
 logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/addresses", tags=["Addresses"])
+
 
 
 @router.post("/", response_model=schemas.AddressResponse, status_code=201)
