@@ -51,7 +51,6 @@ def delete_address(db: Session, address_id: int) -> bool:
 def get_nearby_addresses(
     db: Session, lat: float, lon: float, distance_km: float
 ) -> list[models.Address]:
-    # Fetch all, then filter by Haversine distance in Python
     all_addresses = db.query(models.Address).all()
     return [
         addr for addr in all_addresses
