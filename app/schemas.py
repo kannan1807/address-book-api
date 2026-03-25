@@ -15,7 +15,6 @@ class AddressCreate(AddressBase):
     pass
 
 class AddressUpdate(BaseModel):
-    # All fields optional for partial updates (PATCH)
     name:      str   | None = None
     street:    str   | None = None
     city:      str   | None = None
