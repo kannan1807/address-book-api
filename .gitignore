@@ -1,8 +1,45 @@
-venv/
+# Python
 __pycache__/
-*.db
-.env
-logs/
-*.pyc
+*.py[cod]
 *.pyo
+*.pyd
+*.pyc
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Environment variables
+.env
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+logs/
+
+# IDE — VS Code
+.vscode/
+
+# IDE — PyCharm
+.idea/
+
+# OS files — Windows
+Thumbs.db
+desktop.ini
+
+# OS files — macOS
+.DS_Store
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Pytest
 .pytest_cache/
+htmlcov/
+.coverage
