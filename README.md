@@ -119,3 +119,30 @@ address_book/
 
 All API events are logged to both the terminal and `logs/app.log`.
 Log files rotate automatically at 5MB, keeping the last 3 files.
+
+---
+
+## Running with Docker
+
+### Prerequisites
+- Install Docker: https://www.docker.com/products/docker-desktop
+
+### Build and run
+```bash
+docker-compose up --build
+```
+
+### Run in background
+```bash
+docker-compose up -d --build
+```
+
+### Stop
+```bash
+docker-compose down
+```
+
+### Open Swagger UI
+```
+http://localhost:8000/docs
+```

@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  api:
+    build: .
+    container_name: address_book_api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./address_book.db:/app/address_book.db
+      - ./logs:/app/logs
+    env_file:
+      - .env
+    restart: unless-stopped
